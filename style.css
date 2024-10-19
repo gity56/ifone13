@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.container{
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    width: 40px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.4s, transform 0.4s; /* Smooth transition for color and scale */
+}
+
+ul li a:hover {
+    color: #247ec8; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    width: 40%;
+    color: #fff;
+}
+.content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.content .text a{
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.4s, color 0.4s, transform 0.4s; /* Add transition for smooth effect */
+}
+.content .text a:hover{
+    background: #000;
+    color: #fff;
+    transform: scale(1.1); /* Scale the button slightly */
+}
+.content .image{
+    width: 30%;
+}
+.content .image img{
+    width: 180px;
+}
+.icons{
+    position:absolute;
+    bottom: 0;
+    left:50% ;
+    transform: translateX(-50%);
+}
+.icons img{
+    width: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.1);
+}
